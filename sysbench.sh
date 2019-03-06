@@ -105,7 +105,7 @@ echo "End test: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 
 echo ""
 echo "End time: "$(date +"%Y-%m-%d %H:%M:%S")""
-echo "End time: "$(date +"%Y-%m-%d %H:%M:%S")"" > "$filename"
+echo "End time: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 echo "Test result was saved in "$filename""
 rm -f tmp.txt
 rm -f test_file*
