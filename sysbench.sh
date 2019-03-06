@@ -22,7 +22,7 @@ echo "" >> "$filename"
 echo "Start test: "$(date +"%Y-%m-%d %H:%M:%S")""
 echo "Start test: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 sysbench --test=fileio --file-total-size=5G --file-num=128 prepare > tmp.txt
-sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --time=300 --max-requests=0 --file-num=128 run >> "$filename"
+sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --max-time=300 --max-requests=0 --file-num=128 run >> "$filename"
 echo "End test: "$(date +"%Y-%m-%d %H:%M:%S")""
 echo "End test: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 
@@ -54,7 +54,7 @@ echo "" >> "$filename"
 echo "Start test: "$(date +"%Y-%m-%d %H:%M:%S")""
 echo "Start test: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 sysbench --test=fileio --file-total-size=10G --file-num=128 prepare > tmp.txt
-sysbench --test=fileio --file-total-size=10G --file-test-mode=rndrw --time=300 --max-requests=0 --file-num=128 run >> "$filename"
+sysbench --test=fileio --file-total-size=10G --file-test-mode=rndrw --max-time=300 --max-requests=0 --file-num=128 run >> "$filename"
 echo "End test: "$(date +"%Y-%m-%d %H:%M:%S")""
 echo "End test: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 
@@ -88,7 +88,7 @@ echo "" >> "$filename"
 echo "Start test: "$(date +"%Y-%m-%d %H:%M:%S")""
 echo "Start test: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 sysbench --test=fileio --file-total-size=5G --file-num=256 prepare > tmp.txt
-sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --time=300 --max-requests=0 --file-num=256 run >> "$filename"
+sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --max-time=300 --max-requests=0 --file-num=256 run >> "$filename"
 echo "End test: "$(date +"%Y-%m-%d %H:%M:%S")""
 echo "End test: "$(date +"%Y-%m-%d %H:%M:%S")"" >> "$filename"
 

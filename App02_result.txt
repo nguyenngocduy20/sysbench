@@ -1,0 +1,339 @@
+Start time: 2019-03-06 07:37:19
+=========== CPU Test 1 ===========
+
+Start test: 2019-03-06 07:37:19
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 2
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 10000
+
+
+Test execution summary:
+    total time:                          5.8097s
+    total number of events:              10000
+    total time taken by event execution: 11.6147
+    per-request statistics:
+         min:                                  1.12ms
+         avg:                                  1.16ms
+         max:                                  3.10ms
+         approx.  95 percentile:               1.21ms
+
+Threads fairness:
+    events (avg/stddev):           5000.0000/3.00
+    execution time (avg/stddev):   5.8074/0.00
+
+End test: 2019-03-06 07:37:25
+
+=========== File IO Test 1 ===========
+
+Start test: 2019-03-06 07:37:25
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 40Mb each
+5Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  51960 Read, 34640 Write, 110847 Other = 197447 Total
+Read 811.88Mb  Written 541.25Mb  Total transferred 1.3214Gb  (4.5104Mb/sec)
+  288.66 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0033s
+    total number of events:              86600
+    total time taken by event execution: 3.0853
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.04ms
+         max:                                  7.57ms
+         approx.  95 percentile:               0.26ms
+
+Threads fairness:
+    events (avg/stddev):           86600.0000/0.00
+    execution time (avg/stddev):   3.0853/0.00
+
+End test: 2019-03-06 07:46:34
+
+=========== Memory Test 1 ===========
+
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 2
+
+Doing memory operations speed test
+Memory block size: 256K
+
+Memory transfer size: 102400M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 409600 (56660.39 ops/sec)
+
+102400.00 MB transferred (14165.10 MB/sec)
+
+
+Test execution summary:
+    total time:                          7.2290s
+    total number of events:              409600
+    total time taken by event execution: 14.3789
+    per-request statistics:
+         min:                                  0.03ms
+         avg:                                  0.04ms
+         max:                                  6.99ms
+         approx.  95 percentile:               0.05ms
+
+Threads fairness:
+    events (avg/stddev):           204800.0000/200.00
+    execution time (avg/stddev):   7.1894/0.00
+
+End test: 2019-03-06 07:46:41
+
+=========== CPU Test 2 ===========
+
+Start test: 2019-03-06 07:46:41
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 2
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          14.9584s
+    total number of events:              10000
+    total time taken by event execution: 29.9091
+    per-request statistics:
+         min:                                  2.89ms
+         avg:                                  2.99ms
+         max:                                  7.53ms
+         approx.  95 percentile:               3.05ms
+
+Threads fairness:
+    events (avg/stddev):           5000.0000/1.00
+    execution time (avg/stddev):   14.9545/0.00
+
+End test: 2019-03-06 07:46:56
+
+=========== File IO Test 2 ===========
+
+Start test: 2019-03-06 07:46:56
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 80Mb each
+10Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  51960 Read, 34640 Write, 110819 Other = 197419 Total
+Read 811.88Mb  Written 541.25Mb  Total transferred 1.3214Gb  (4.51Mb/sec)
+  288.64 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0275s
+    total number of events:              86600
+    total time taken by event execution: 8.5102
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.10ms
+         max:                                  8.28ms
+         approx.  95 percentile:               0.30ms
+
+Threads fairness:
+    events (avg/stddev):           86600.0000/0.00
+    execution time (avg/stddev):   8.5102/0.00
+
+End test: 2019-03-06 08:00:17
+
+=========== Memory Test 2 ===========
+
+Start test: 2019-03-06 08:00:17
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 2
+
+Doing memory operations speed test
+Memory block size: 256K
+
+Memory transfer size: 51200M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 204800 (56008.18 ops/sec)
+
+51200.00 MB transferred (14002.04 MB/sec)
+
+
+Test execution summary:
+    total time:                          3.6566s
+    total number of events:              204800
+    total time taken by event execution: 7.2634
+    per-request statistics:
+         min:                                  0.03ms
+         avg:                                  0.04ms
+         max:                                  4.93ms
+         approx.  95 percentile:               0.05ms
+
+Threads fairness:
+    events (avg/stddev):           102400.0000/84.00
+    execution time (avg/stddev):   3.6317/0.00
+
+End test: 2019-03-06 08:00:20
+
+=========== CPU Test 3 ===========
+
+Start test: 2019-03-06 08:00:20
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 2
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 10000
+
+
+Test execution summary:
+    total time:                          5.8041s
+    total number of events:              10000
+    total time taken by event execution: 11.6030
+    per-request statistics:
+         min:                                  1.08ms
+         avg:                                  1.16ms
+         max:                                  7.71ms
+         approx.  95 percentile:               1.20ms
+
+Threads fairness:
+    events (avg/stddev):           5000.0000/6.00
+    execution time (avg/stddev):   5.8015/0.00
+
+End test: 2019-03-06 08:00:26
+
+=========== File IO Test 3 ===========
+
+Start test: 2019-03-06 08:00:26
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+256 files, 20Mb each
+5Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  52020 Read, 34680 Write, 221906 Other = 308606 Total
+Read 812.81Mb  Written 541.88Mb  Total transferred 1.3229Gb  (4.5156Mb/sec)
+  289.00 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0009s
+    total number of events:              86700
+    total time taken by event execution: 2.0057
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.02ms
+         max:                                  6.03ms
+         approx.  95 percentile:               0.04ms
+
+Threads fairness:
+    events (avg/stddev):           86700.0000/0.00
+    execution time (avg/stddev):   2.0057/0.00
+
+End test: 2019-03-06 08:09:30
+
+=========== Memory Test 3 ===========
+
+Start test: 2019-03-06 08:09:30
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 2
+
+Doing memory operations speed test
+Memory block size: 256K
+
+Memory transfer size: 51200M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 204800 (56080.34 ops/sec)
+
+51200.00 MB transferred (14020.09 MB/sec)
+
+
+Test execution summary:
+    total time:                          3.6519s
+    total number of events:              204800
+    total time taken by event execution: 7.2647
+    per-request statistics:
+         min:                                  0.03ms
+         avg:                                  0.04ms
+         max:                                  1.83ms
+         approx.  95 percentile:               0.05ms
+
+Threads fairness:
+    events (avg/stddev):           102400.0000/19.00
+    execution time (avg/stddev):   3.6324/0.00
+
+End test: 2019-03-06 08:09:34
+End time: 2019-03-06 08:09:34
